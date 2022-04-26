@@ -1,0 +1,123 @@
+#feildset{
+    align-self: center;
+    width:50vmax;
+    font-family: cursive;
+    background-color: #BDB7C5;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #FFC0CB;
+    #feildset-form{
+        
+    }
+    #todo-doing{
+        text-align: center;
+        #doing-input{
+            font-size: 2Vmax;
+            font-family: cursive;
+            color: #ADFF2F;
+            background-color: #1c76b2;
+        }
+        #doing-submit{
+            width: 5vmax;
+            font-size: 2vmax;
+            border-radius: 2px;
+            box-shadow: 1px 1px 1px red;
+            cursor: pointer;
+            border: none;
+            color: white;
+            background-color:#ADFF2F;
+            font-family: cursive;
+        }
+    }
+    #todo-show{
+        align-self: center;
+        margin-top: 1vmax;
+        width: 10vmax;
+        text-transform: capitalize;
+        box-shadow: 1px 1px 1px red;
+        font-size: 2vmax;
+        border-radius: 2px;
+        border: none;
+        color:white;
+        background-color: #00BFFF;
+        font-family: cursive;
+        cursor: pointer;
+    }
+    #todo-list{
+        margin-top: 2vmax;
+        #content-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center; 
+        text-align: center;
+        #list-infor{
+            display: flex;
+            margin-top: 1vmax;
+            width: 70%;
+            font-family: cursive;
+            font-size: 2vmax;
+            color: #ADFF2F;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px red;
+        }
+        #list-Delete{
+            margin-top: 1vmax;
+            width: 12%;
+            text-transform: capitalize;
+            box-shadow: 1px 1px 1px red;
+            font-size: 2vmax;
+            border-radius: 2px;
+            border: none;
+            color:white;
+            background-color: #FFA927;
+            font-family: cursive;
+            cursor: pointer;
+        }
+        #list-edit{
+            margin-top: 1vmax;
+            width: 12%;
+            text-transform: capitalize;
+            box-shadow: 1px 1px 1px red;
+            font-size: 2vmax;
+            border-radius: 2px;
+            border: none;
+            color:white;
+            background-color: #FFA927;
+            font-family: cursive;
+            cursor: pointer;
+        }
+        }
+    }
+    #todo-hide{
+        align-self: center;
+        width: 10vmax;
+        text-transform: capitalize;
+        box-shadow: 1px 1px 1px red;
+        font-size: 2vmax;
+        border-radius: 2px;
+        border: none;
+        color:white;
+        background-color: #00BFFF;
+        font-family: cursive;
+        cursor: pointer;
+        margin-top: 1vmax;
+    }
+}  
+.feildset-legend{
+    text-transform: uppercase;
+    letter-spacing: 1vmax;
+    color:aqua;
+    font-size: 4vmax;
+    text-shadow:2px 2px 5px #ADFF2F;
+    animation: legend 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite forwards;
+} 
+@keyframes legend {
+    from { transform: scale(0.5,0.5) rotateX(0 deg)}
+    to {transform: scale(1.2,1.0) rotateX(360 deg)}
+ }
+#doing-input{
+    font-size: 2Vmax;
+    font-family: cursive;
+    color: #ADFF2F;
+    background-color: #1c76b2;
+}

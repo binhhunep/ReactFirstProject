@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/bootstrap";
+.article4-container{
+    background-image: url(../../images/banner3.png);
+    background-repeat: none;
+    background-position:center;
+    background-size: cover;
+    height: auto;
+    padding:0vmax 3vmax ;
+    .row{
+    justify-content: space-between;
+    .thumbnail{
+        margin-top: 2vmax;
+        // height: 25rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        // box-sizing: border-box;
+        flex: 1;
+        .thumbnail-img{
+            background-color: #E2D0BC;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            padding: 4vmax 2vmax;
+            flex-shrink: 0;
+        }
+        .thumbnail-caption{
+            padding: 0 1vmax;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            .caption-title{
+                font-size: 1.2vmax;
+                flex:1;
+            }
+            .caption-price{
+                font-size: 1.0vmax;
+                flex:1;
+            }
+            .btn{
+                width: 40%;
+                margin-bottom: 1vmax ;
+            }
+        }
+    }}
+.article4-container-content{
+    font-size: 1.2vmax;
+    color: white;
+    text-align: justify;
+}
+.article4-container-btn{
+    font-size: 1.2vmax;
+    padding:0.5vmax;
+    color: white;
+    background-color: #C7A17A;
+    margin-bottom: 1vmax;
+}
+}

@@ -1,0 +1,68 @@
+@import "~bootstrap/scss/bootstrap";
+.article5-container{
+    // background-color: black ;
+    padding:0vmax 3vmax ;
+    .row{
+    justify-content: space-between;
+    .thumbnail{
+        margin-top: 2vmax;
+        // height: 25rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        // background-color: white;
+        display: flex;
+        flex-direction: column;
+        // box-sizing: border-box;
+        flex: 1;
+        .thumbnail-img{
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .thumbnail-caption{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            .caption-title{
+                text-align: start;
+                font-size: 2vmax;
+            }
+            .caption-note{
+                text-align: start;
+                color: #C7A17A;
+                font-size: 1.6vmax;
+                flex:1;
+            }
+            .caption-price{
+                text-align: justify;
+                font-size: 1.2vmax;
+                flex:1;
+            }
+            .accordion{
+                .accordion-button{
+                    color:#C7A17A;
+                    font-size: 1.2vmax;
+                }
+                .accordion-body{
+                    color: black;
+                    text-align: justify;
+                    font-size: 1vmax;
+                }
+            }
+        }
+    }}
+.article5-container-content{
+    font-size: 1.2vmax;
+    color: white;
+    text-align: justify;
+}
+.article5-container-btn{
+    font-size: 1.2vmax;
+    padding:0.5vmax;
+    color: white;
+    background-color: #C7A17A;
+    margin-bottom: 1vmax;
+}
+}
