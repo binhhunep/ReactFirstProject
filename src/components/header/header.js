@@ -5,18 +5,18 @@ import "bootstrap";
 import Color from "../HOC/color";
 class Header extends React.Component {
   state = {
-    para: "This article is about the brewed beverage. For the seeds from which it is made, see Coffee bean. For the plant, see Coffea. For other uses, see Coffee (disambiguation).",
+    para: "",
     check: true,
   };
   readclick = () => {
     let i = this.state.check;
     i === true
       ? this.setState({
-          para: "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee.",
+          para: "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee.This article is about the brewed beverage. For the seeds from which it is made, see Coffee bean. For the plant, see Coffea. For other uses, see Coffee (disambiguation).",
           check: !i,
         })
       : this.setState({
-          para: "This article is about the brewed beverage. For the seeds from which it is made, see Coffee bean. For the plant, see Coffea. For other uses, see Coffee (disambiguation).",
+          para: "",
           check: !i,
         });
   };

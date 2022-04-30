@@ -1,0 +1,23 @@
+.user-container{
+    height:100%;
+    color: white;
+    .title {
+        width: 200px;
+        color: white;
+        margin: 0 auto;
+    }
+    .user-content {
+        color: white;
+        .child-infor {
+            color: white;
+            margin: 3px auto;
+            width: 200px;
+            cursor: pointer;
+        }    
+            .child-img {
+                aspect-ratio: 4/3;
+                object-fit: cover;
+                width: 200px;
+        }
+    }
+}

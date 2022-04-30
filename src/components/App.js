@@ -7,6 +7,8 @@ import Article4 from "./section/article4";
 import Article5 from "./section/article5";
 import Article6 from "./section/article6";
 import Article7 from "./section/article7";
+import ListUser from "./user/listUser";
+import DetailUser from "./user/detailUser";
 import Footer from "./footer/footer";
 import ToDoParent from "./ToDo/ToDoParent";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
@@ -21,7 +23,7 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path="/">
-              <header className="App-header">
+              <header className="App-header sticky-top">
                 <Header />
                 <br />
                 <section className="App-section">
@@ -56,11 +58,26 @@ function App() {
               <NavBar />
               <br />
               <ToDoParent />
+              <br />
+              <br />
             </Route>
             <Route exact path="/Login">
               <NavBar />
               <br />
               <Login />
+              <br />
+            </Route>
+            <Route exact path="/User">
+              <NavBar />
+              <br />
+              <ListUser />
+              <br />
+            </Route>
+            <Route exact path="/User/:id">
+              <NavBar />
+              <br />
+              <DetailUser />
+              <br />
             </Route>
           </Switch>
         </div>

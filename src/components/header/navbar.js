@@ -4,6 +4,9 @@ import "../../styles/header/navbar.scss";
 import { FaBeer } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { FaUserSecret } from "react-icons/fa";
+import { RiLoginBoxFill } from "react-icons/ri";
+import "bootstrap";
 
 class NavBar extends React.Component {
   render() {
@@ -102,12 +105,20 @@ class NavBar extends React.Component {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link">BLOG</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="#">
                   CONTACT
                 </a>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/User"
+                  exact
+                  className={(isActive) =>
+                    "nav-link" + (!isActive ? " unselected" : "")
+                  }
+                >
+                  USER
+                </NavLink>
               </li>
             </ul>
             <form className="d-flex">

@@ -28,7 +28,7 @@ class LoginChild extends React.Component {
     let showHide = this.state.showHide;
     return (
       <>
-        <fieldset>
+        <fieldset className="fieldsetInfor">
           <legend>Information</legend>
           {showHide === false ? (
             <button id="show" onClick={() => this.clickShowHide()}>

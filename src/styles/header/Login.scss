@@ -1,9 +1,9 @@
-
 fieldset
 {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+    justify-content: center;
     align-self: center;
     background-color:blanchedalmond;
     width: 50vmax;
@@ -113,6 +113,7 @@ fieldset .btn{
   }
   .session3-fieldset
   {
+    margin: 0 auto;
     width: 50vmax;
     padding: 2%;
     background-color: antiquewhite;
@@ -193,4 +194,8 @@ fieldset .btn{
     color: white;
     font-weight: bold;
     background-color: #30971A;
+  }
+  .fieldsetInfor{
+    margin: 0 auto;
+    height: 100vh;
   }
